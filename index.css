@@ -99,9 +99,6 @@ body {
   margin: auto;
 }
 
-.info-card a {
-  color: var(--color-black);
-}
 .info-card button:hover {
   transition: 0.9s ease;
 }
