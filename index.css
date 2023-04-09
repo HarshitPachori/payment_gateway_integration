@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --color-dark: #1d2630;
+  --color-light: hsl(252, 30%, 95%);
+  --color-secondary: hsl(252, 100%, 90%);
+  --color-black: hsl(252, 30%, 10%);
+  --card-border-radius: 1rem;
+  --btn-padding: 0.4rem 1rem;
+  --card-padding: 1rem;
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--color-dark);
+  background: var(--color-light);
+  overflow-x: hidden;
+}
+
+.header {
+  background-color: #1d2630;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  color: var(--color-secondary);
+  gap: 0.2rem;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.3rem;
+}
+.hamburger button {
+  color: var(--color-light);
+  background-color: var(--color-dark);
+  display: none;
+}
+.logo img {
+  width: 2rem;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.3rem;
+}
+.menu a {
+  color: var(--color-secondary);
+  border-radius: var(--card-border-radius);
+  padding: var(--btn-padding);
+}
+.menu a:hover {
+  background-color: var(--color-light);
+  color: var(--color-black);
+  border-radius: var(--card-border-radius);
+  padding: var(--btn-padding);
+  transition: 0.9s ease;
+}
+.info-card {
+  background-color: #1d2630;
+  color: var(--color-light);
+  width: 300px;
+  border-radius: var(--card-border-radius);
+  padding: var(--card-padding);
+  position: absolute;
+  top: 24vh;
+  bottom: 24vh;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.info-card button {
+  color: var(--color-black);
+  background-color: var(--color-light);
+  border-radius: var(--card-border-radius);
+  padding: var(--btn-padding);
+  position: absolute;
+  top: 60%;
+  bottom: 30%;
+  left: 15%;
+  right: 15%;
+  margin: auto;
+}
+.info-card a {
+  color: var(--color-black);
+}
+.info-card button:hover {
+  transition: 0.9s ease;
+}
