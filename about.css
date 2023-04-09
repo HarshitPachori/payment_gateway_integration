@@ -68,7 +68,7 @@ body {
   padding: var(--btn-padding);
   transition: 0.9s ease;
 }
-.info-card {
+.about-card {
   background-color: #1d2630;
   color: var(--color-light);
   width: 300px;
@@ -82,8 +82,21 @@ body {
   margin: 0 auto;
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3);
 }
-.info-card a {
-  color: var(--color-black);
+.about-card h3{
+font-size:1.4rem;
+font-weight: 600;
+padding: 0.2rem 0.2rem;
+text-align: center;
+/* letter-spacing: 0.1rem; */
+}
+.about-card p{
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: var(--color-light);
+    letter-spacing: 0.1rem;
+}
+.about-card a{
+    color: var(--color-black);
   background-color: var(--color-light);
   border-radius: var(--card-border-radius);
   padding: var(--btn-padding);
@@ -91,21 +104,4 @@ body {
   font-size: 15px;
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3);
   transition: 0.3s;
-  position: absolute;
-  top: 60%;
-  bottom: 30%;
-  left: 15%;
-  right: 15%;
-  margin: auto;
-}
-.info-card h4 {
-  color: var(--color-secondary);
-}
-.info-card h6 {
-  color: var(--color-secondary);
-  font-weight: 500;
-}
-
-.info-card a:hover {
-  transition: 0.9s ease;
 }
